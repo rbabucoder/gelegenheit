@@ -1,0 +1,147 @@
+// base/_base.scss
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Theme settings
+$theme-max-width: 1180px;
+
+// Global container class
+.container {
+  max-width: $theme-max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// assets/styles/scss/base/_base.scss
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+h1,
+// h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  font-family: "Questrial", sans-serif;
+}
+
+a {
+  color: $link-text-color;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-heading {
+  .elementor-widget-container {
+    .elementor-heading-title {
+      font-size: 38px !important;
+      font-weight: 700 !important;
+      @media (max-width: 1024px) {
+        text-align: center !important;
+        font-size: 2rem !important;
+      }
+    }
+  }
+}
+.sub-heading {
+  .elementor-widget-container {
+    .elementor-heading-title {
+      font-size: 1rem;
+      line-height: 24px;
+      color: $color-primary;
+      @media (max-width: 1024px) {
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-secondary;
+}
+@media (max-width: 1024px){
+  p{
+    text-align: center;
+  }
+}
+
+.btn-primary {
+  .elementor-button-wrapper {
+    .elementor-button {
+      padding: 20px 34px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color-white;
+      // display: block;
+      background: $color-primary;
+      color: $color-text-light;
+    }
+  }
+}
+
+.theme-img-container {
+  .theme-img {
+    height: 100%;
+
+    position: relative;
+    .elementor-widget-container {
+      overflow: visible;
+
+      img {
+        object-fit: cover;
+        height: 100% !important;
+      }
+    }
+  }
+  .img-shape-2 {
+    position: absolute;
+    max-width: 201px !important;
+    z-index: 1;
+    top: -27px;
+    left: -9px;
+  }
+  .img-shape {
+    // content: "";
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    left: -30px;
+    top: -32px;
+    z-index: -1;
+    max-width: 709px !important;
+    width: 709px;
+
+    // background: url("../../../images/shape-blue.png");
+  }
+}
+
+.global-custom-padding {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+@keyframes ripples-effect {
+  70% {
+    box-shadow: 0 0 0 15px currentColor;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 0;
+  }
+}

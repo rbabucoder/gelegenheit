@@ -1,0 +1,79 @@
+// _button.scss
+
+// Base button styles
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-text-light;
+
+    &:hover,
+    &:focus {
+      background-color: #0056b3;
+    }
+  }
+
+  &--secondary {
+    background-color: #6c757d;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #5a6268;
+    }
+  }
+
+  &--danger {
+    background-color: #dc3545;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #c82333;
+    }
+  }
+
+  &--success {
+    background-color: #28a745;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #218838;
+    }
+  }
+
+  &--warning {
+    background-color: #ffc107;
+    color: #212529;
+
+    &:hover,
+    &:focus {
+      background-color: #e0a800;
+    }
+  }
+}
+
+// Specific button styles for the header action button
+.header__action-button {
+  @extend .button;
+  @extend .button--primary;
+  font-size: 1.2rem;
+  padding: 18px 30px 18px 30px;
+  border-radius: 0px;
+  line-height: 1.1em;
+}
+
+
+.btn-primary{
+  
+}

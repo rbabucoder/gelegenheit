@@ -1,0 +1,54 @@
+// Importing abstracts
+@import "abstracts/variables";
+
+// Importing base styles
+@import "base/base";
+
+// Importing layout styles
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/testimonials";
+@import "layouts/news";
+
+// Importing component styles
+@import "components/buttons";
+
+// Importing pages styles
+@import "pages/home";
+
+
+// scss/
+//   ├── abstracts/
+//   │   ├── _variables.scss      // SCSS variables
+//   │   ├── _mixins.scss         // SCSS mixins
+//   │   ├── _functions.scss      // SCSS functions
+//   │   └── _placeholders.scss   // SCSS placeholders
+//   │
+//   ├── base/
+//   │   ├── _reset.scss          // CSS reset/normalize
+//   │   ├── _typography.scss     // Base typography styles
+//   │   └── _base.scss           // Base styles (common HTML elements)
+//   │
+//   ├── components/
+//   │   ├── _buttons.scss        // Button styles
+//   │   ├── _cards.scss          // Card styles
+//   │   └── _forms.scss          // Form styles
+//   │
+//   ├── layout/
+//   │   ├── _header.scss         // Header styles
+//   │   ├── _footer.scss         // Footer styles
+//   │   ├── _sidebar.scss        // Sidebar styles
+//   │   └── _grid.scss           // Grid system
+//   │
+//   ├── pages/
+//   │   ├── _home.scss           // Home page styles
+//   │   ├── _about.scss          // About page styles
+//   │   └── _contact.scss        // Contact page styles
+//   │
+//   ├── themes/
+//   │   └── _theme.scss          // Theme-specific styles
+//   │
+//   ├── vendors/
+//   │   └── _bootstrap.scss      // Vendor-specific styles (e.g., Bootstrap)
+//   │
+//   └── main.scss                // Main SCSS file for imports
